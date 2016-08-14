@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Quranverse : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Quranverse</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/4test4/quranverse/tree/gh-pages">View on GitHub</a>
+
+          <h1 id="project_title">Quranverse</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" style="visibility:hidden" href="https://github.com/4test4/quranverse/zipball/master">Download this project as a .zip file</a>
+              <a class="zip_download_link" href="https://github.com/4test4/quranverse/zipball/gh-pages">Download this project as a .zip file</a>
+              <!--<a class="tar_download_link" href="https://github.com/4test4/quranverse/tarball/master">Download this project as a tar.gz file</a>-->
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-quran-verse" class="anchor" href="#welcome-to-quran-verse"><span class="octicon octicon-link"></span></a>Easily embed a verse from Qur'aan</h3>
+
+<HR><BR><h4><p>Here's how to easily embed a verse from the Qur'aan on any website.</p></h4> Paste below html snippet into your webpage:
+<pre><code>&lt;script chapter="15" verse="9" 
+   src="//4test4.github.io/quranverse/js/quran.js"&gt;
+&lt;/script&gt;
+</code></pre>	
+	<!-- <script chapter="15" verse="9" src="js/quran.js" type="text/javascript">
+    </script> -->
+	<BR><iframe width="100%" height="170" src="//jsfiddle.net/78fmboja/embedded/result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+<BR><BR><BR><p><h4>An example with english translation included. Just add another parameter called trans like so:</h4></p>
+<pre><code>&lt;script chapter="15" verse="9" trans="#translation"
+   src="//4test4.github.io/quranverse/js/quran.js"&gt;
+&lt;/script&gt;&lt;div id='translation'&gt;&lt;/div&gt;
+</code></pre>	<!-- &lt;div id='verses2'&lt;&gt;/div&gt; -->
+	<!-- <script chapter="15" verse="9" xselector="#verses2" trans="#translation" count="5" src="js/quran.js" type="text/javascript">
+    </script><BR>
+    <div id='translation' class='translation'></div> -->
+	<BR><iframe width="100%" height="170" src="//jsfiddle.net/vxnvarzf/embedded/result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+<BR><BR><BR><H4><p>An example showing wordbyword. Just add a parameter called qurantype like so:</p></H4>
+<pre><code>&lt;script chapter="15" verse="9" qurantype="wordbyword"
+   src="//4test4.github.io/quranverse/js/quran.js"&gt;
+&lt;/script&gt;
+</code></pre>
+	<!--<script chapter="15" verse="9" xselector="#verses2" qurantype="wordbyword" count="5" src="js/quran.js" type="text/javascript">
+    </script>-->
+<BR><iframe width="100%" height="329" src="//jsfiddle.net/r5af2hLz/embedded/result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+<BR><BR><BR><H4><p>Another example showing a different qurantype - grammar:</p></H4>
+<pre><code>&lt;script chapter="15" verse="9" qurantype="grammar"
+   src="//4test4.github.io/quranverse/js/quran.js"&gt;
+&lt;/script&gt;
+</code></pre>
+	<!--<script chapter="15" verse="9" xselector="#verses2" trans="#translation2" qurantype="grammar" count="5" src="js/quran.js" type="text/javascript">
+    </script>-->
+<BR><iframe width="100%" height="390" src="//jsfiddle.net/ahpcehyL/embedded/result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+<BR><BR><BR><BR><H4><p>Another example showing a qurantype grammar of Ayat-ul-kursi:</p></H4>
+<!--<pre><code>&lt;script chapter="2" verse="255" qurantype="grammar"
+   src="//4test4.github.io/quranverse/js/quran.js"&gt;
+&lt;/script&gt;
+</code></pre>
+	<script chapter="2" verse="255" qurantype="grammar" src="js/quran.js" type="text/javascript">
+	</script>-->
+<iframe width="100%" height="370" src="//jsfiddle.net/aevLf28b/embedded/result,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<BR>
+Here it is as an image for comparison:
+<img src="http://c00022506.cdn1.cloudfiles.rackspacecloud.com/2_255.png" alt="2:255">
+
+
+<BR><BR><BR><BR><H4><p>Another example, this time with multiple verses. Just set the count like so:<BR></H4>
+NOTE: This isn't currently displaying ayahs other than the first one. This is a known issue. WIP.</p>
+<pre><code>&lt;script chapter="37" verse="123" count="5"
+   src="http://4test4.github.io/quranverse/js/quran.js"&gt;
+&lt;/script&gt;
+</code></pre>	
+	<script chapter="37" verse="123" count="5" src="js/quran.js" type="text/javascript">
+    </script>
+
+	
+<BR><BR><BR><H4>Credits / Inspired by:</H4>
+<OL>
+	<LI><A HREF=http://qzaidi.github.io/quran/javascript/ TARGET=_>http://qzaidi.github.io/quran/javascript/</A></LI>
+	<LI><A HREF=http://stevehanov.ca/blog/index.php?id=121 TARGET=_>http://stevehanov.ca/blog/index.php?id=121</A></LI>
+	<LI>APIs provided by: <A HREF=http://api.globalquran.com/ TARGET=_>http://api.globalquran.com/</A></LI>
+	<LI>Corpus data from: <A HREF=http://corpus.quran.com TARGET=_>http://corpus.quran.com</A></LI>
+</OL>	
+	  </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Quranverse maintained by <a href="https://github.com/4test4">4test4</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
+>>>>>>> origin/gh-pages
