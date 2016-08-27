@@ -837,9 +837,16 @@ function renderVerse(verse, params){
 	}
 	else{
 		if(params.word && parseInt(params.word)){
+
 			var i = parseInt(params.word) - 1; if(i<0) i = 0;
+			//var pauseMarks = ["ۖ","م","لا","ج","قلی","صلی","∴"];
+			if(i == 11) debugger;
 			var words = verse.split(' ');
-			if(params.word < words.length){
+			var stopletters = "ۚۖۛۗۙ".split('');
+			for(var k = 0; k <= i; k++){ //now, account for cases when we have ayah pause marks etc; dont count that in word boundaries.
+				if( -1 != stopletters.indexOf( words[k] ) ){ ++i; }
+			}
+			if(i < words.length){
 				words.splice(i, 0, "<span class='highlight'>");
 				words.splice(i + 2, 0, "</span>");
 				verse = words.join(' ');
